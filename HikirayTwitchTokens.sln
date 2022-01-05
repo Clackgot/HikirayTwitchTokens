@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HikirayTwitchTokens", "HikirayTwitchTokens\HikirayTwitchTokens.csproj", "{16741EE3-1588-48BE-A788-FB62E5AF1FEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitchTokensFinder", "TwitchTokensFinder\TwitchTokensFinder.csproj", "{CBE6D284-CB0B-4CC5-8C2E-D8E6C4028970}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16741EE3-1588-48BE-A788-FB62E5AF1FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16741EE3-1588-48BE-A788-FB62E5AF1FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16741EE3-1588-48BE-A788-FB62E5AF1FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16741EE3-1588-48BE-A788-FB62E5AF1FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE6D284-CB0B-4CC5-8C2E-D8E6C4028970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE6D284-CB0B-4CC5-8C2E-D8E6C4028970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE6D284-CB0B-4CC5-8C2E-D8E6C4028970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE6D284-CB0B-4CC5-8C2E-D8E6C4028970}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4C7BD21-9C44-4F2F-8125-9ABC5CEC6E4F}
+	EndGlobalSection
+EndGlobal
