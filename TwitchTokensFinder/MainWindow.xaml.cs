@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -52,9 +53,15 @@ namespace TwitchTokensFinder
         {
             TextRange doc = new TextRange(docBox.Document.ContentStart, docBox.Document.ContentEnd);
             var dialog = new Ookii.Dialogs.Wpf.VistaFolderBrowserDialog();
+            dialog.Multiselect = true;
             if (dialog.ShowDialog(this).GetValueOrDefault())
             {
-                string[] allfiles = Directory.GetFiles(dialog.SelectedPath, "*.txt", SearchOption.AllDirectories);
+                List<string> allfiles = new List<string>();
+                foreach (var dir in dialog.SelectedPaths)
+                {
+                    allfiles.AddRange(Directory.GetFiles(dir, "*.txt", SearchOption.AllDirectories).ToList());
+                }
+                
                 string resultTokens = "";
                 foreach (string filename in allfiles)
                 {
@@ -66,7 +73,6 @@ namespace TwitchTokensFinder
                 }
                 doc.Text = resultTokens;
             }
-
         }
     }
 }
