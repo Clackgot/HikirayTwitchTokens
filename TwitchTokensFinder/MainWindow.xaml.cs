@@ -55,12 +55,11 @@ namespace TwitchTokensFinder
             if (dialog.ShowDialog(this).GetValueOrDefault())
             {
                 string[] allfiles = Directory.GetFiles(dialog.SelectedPath, "*.txt", SearchOption.AllDirectories);
-                File.AppendAllLines("result.txt", allfiles);
                 string resultTokens = "";
                 foreach (string filename in allfiles)
                 {
                     var token = GetToken(filename);
-                    if (!(string.IsNullOrEmpty(token)))
+                    if (!string.IsNullOrEmpty(token))
                     {
                         resultTokens += $"{token}\n";
                     }
