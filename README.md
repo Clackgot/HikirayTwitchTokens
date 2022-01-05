@@ -4,3 +4,11 @@
 
 
 [Ссылка на скачивание](https://github.com/Clackgot/HikirayTwitchTokens/releases/download/0.1/TwitchTokensFinder.exe)
+
+<details>
+  <summary>Скиншоты</summary>
+  
+  ![1](https://github.com/Clackgot/HikirayTwitchTokens/blob/master/1.PNG)
+  ![2](https://github.com/Clackgot/HikirayTwitchTokens/blob/master/2.PNG)
+  ![3](https://github.com/Clackgot/HikirayTwitchTokens/blob/master/3.PNG)
+</details>
